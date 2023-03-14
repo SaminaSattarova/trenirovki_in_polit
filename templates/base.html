@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Миссия Колонизация Марса</h1>
+        <h3>И на Марсе будут яблони цвести!</h3>
+    {% if 'инженер' in prof.lower() %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="../static/img/Ship1.jpg" alt="здесь должна была быть картинка, но не нашлась">
+    {% elif 'строитель' in prof.lower() %}
+        <h2>Научные симуляторы</h2>
+        <img src="../static/img/Ship2.jpg" alt="здесь должна была быть картинка, но не нашлась">
+    {% else %}
+        <h2>Симулятор для вас</h2>
+        <img src="../static/img/Ship3.jpg" alt="здесь должна была быть картинка, но не нашлась">
+    {% endif %}
+</body>
+</html>
